@@ -1,4 +1,7 @@
-// Re-export types from @disjukr/bdl
+// ============================================================================
+// Re-exports from @disjukr/bdl
+// ============================================================================
+
 export type {
   BdlIr,
   Module,
@@ -21,7 +24,10 @@ export type {
   UnionItem,
 } from "@disjukr/bdl/ir";
 
-// BdlStandard types (not exported from package, so defined here)
+// ============================================================================
+// BdlStandard Types (not exported from package, so defined here)
+// ============================================================================
+
 export interface BdlStandard {
   name?: string;
   description?: string;

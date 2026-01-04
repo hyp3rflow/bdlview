@@ -1,6 +1,10 @@
 import type { BdlIr } from "@disjukr/bdl/ir";
 import type { BdlStandard } from "../types/bdl";
 
+// ============================================================================
+// Types
+// ============================================================================
+
 export interface BdlClient {
   baseUrl: string;
   getModules(): Promise<string[]>;
@@ -9,6 +13,10 @@ export interface BdlClient {
   getStandard(standardId: string): Promise<BdlStandard>;
   getStandardIr(standardId: string): Promise<BdlIr>;
 }
+
+// ============================================================================
+// Exported Function
+// ============================================================================
 
 export function createBdlClient(baseUrl: string): BdlClient {
   const normalizedBaseUrl = baseUrl.endsWith("/")
@@ -28,11 +36,11 @@ export function createBdlClient(baseUrl: string): BdlClient {
 
     async getModuleText(modulePath: string): Promise<string> {
       const response = await fetch(
-        `${normalizedBaseUrl}/bdl/modules/${encodeURIComponent(modulePath)}/text`
+        `${normalizedBaseUrl}/bdl/modules/${encodeURIComponent(modulePath)}/text`,
       );
       if (!response.ok) {
         throw new Error(
-          `Failed to fetch module text: ${response.statusText}`
+          `Failed to fetch module text: ${response.statusText}`,
         );
       }
       return response.json();
@@ -48,7 +56,7 @@ export function createBdlClient(baseUrl: string): BdlClient {
 
     async getStandard(standardId: string): Promise<BdlStandard> {
       const response = await fetch(
-        `${normalizedBaseUrl}/bdl/standards/${encodeURIComponent(standardId)}`
+        `${normalizedBaseUrl}/bdl/standards/${encodeURIComponent(standardId)}`,
       );
       if (!response.ok) {
         throw new Error(`Failed to fetch standard: ${response.statusText}`);
@@ -58,7 +66,7 @@ export function createBdlClient(baseUrl: string): BdlClient {
 
     async getStandardIr(standardId: string): Promise<BdlIr> {
       const response = await fetch(
-        `${normalizedBaseUrl}/bdl/standards/${encodeURIComponent(standardId)}/ir`
+        `${normalizedBaseUrl}/bdl/standards/${encodeURIComponent(standardId)}/ir`,
       );
       if (!response.ok) {
         throw new Error(`Failed to fetch standard IR: ${response.statusText}`);
