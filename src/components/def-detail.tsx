@@ -49,8 +49,7 @@ const FieldRow = ({
   return (
     <tr
       className={css({
-        borderBottom: "1px solid",
-        borderColor: "#F5F3EF",
+        borderBottom: "1px solid #F5F3EF",
         transition: "background 0.15s ease",
         _hover: { bg: "#FDFCFA" },
       })}
@@ -95,8 +94,7 @@ const StructView = ({
           <thead>
             <tr
               className={css({
-                borderBottom: "1px solid",
-                borderColor: "#E8E4DE",
+                borderBottom: "1px solid #E8E4DE",
                 bg: "#FAF9F6",
               })}
             >
@@ -174,10 +172,9 @@ const EnumView = ({ def }: { def: Extract<Def, { type: "Enum" }> }) => {
               borderRadius: "lg",
               fontFamily: "mono",
               fontSize: "sm",
-              border: "1px solid",
-              borderColor: "#F5F3EF",
+              border: "1px solid #F5F3EF",
               transition: "all 0.15s ease",
-              _hover: { borderColor: "#E8E4DE" },
+              _hover: { border: "1px solid #E8E4DE" },
             })}
           >
             <span className={css({ color: "#059669", fontWeight: "500" })}>{item.name}</span>
@@ -211,8 +208,7 @@ const UnionView = ({
               p: "4",
               bg: "#FDFCFA",
               borderRadius: "xl",
-              border: "1px solid",
-              borderColor: "#E8E4DE",
+              border: "1px solid #E8E4DE",
               transition: "all 0.15s ease",
               _hover: { boxShadow: "0 2px 8px rgba(0, 0, 0, 0.04)" },
             })}
@@ -223,8 +219,7 @@ const UnionView = ({
                 color: "#1C1917",
                 mb: "3",
                 pb: "2",
-                borderBottom: "1px solid",
-                borderColor: "#F5F3EF",
+                borderBottom: "1px solid #F5F3EF",
               })}
             >
               {item.name}
@@ -264,12 +259,11 @@ const OneofView = ({
               px: "4",
               bg: "rgba(217, 119, 6, 0.06)",
               borderRadius: "lg",
-              border: "1px solid",
-              borderColor: "rgba(217, 119, 6, 0.15)",
+              border: "1px solid rgba(217, 119, 6, 0.15)",
               fontFamily: "mono",
               fontSize: "sm",
               transition: "all 0.15s ease",
-              _hover: { borderColor: "rgba(217, 119, 6, 0.3)", bg: "rgba(217, 119, 6, 0.1)" },
+              _hover: { border: "1px solid rgba(217, 119, 6, 0.3)", bg: "rgba(217, 119, 6, 0.1)" },
             })}
           >
             <TypeDisplay type={item.itemType} onTypeClick={onTypeClick} />
@@ -301,8 +295,7 @@ const ProcView = ({
             p: "4",
             bg: "#FAF9F6",
             borderRadius: "xl",
-            border: "1px solid",
-            borderColor: "#E8E4DE",
+            border: "1px solid #E8E4DE",
             display: "flex",
             alignItems: "center",
             gap: "3",
@@ -352,7 +345,7 @@ const ProcView = ({
           </div>
         </div>
 
-        <div className={css({ p: "4", bg: "#FDFCFA", borderRadius: "xl", border: "1px solid", borderColor: "#F5F3EF" })}>
+        <div className={css({ p: "4", bg: "#FDFCFA", borderRadius: "xl", border: "1px solid #F5F3EF" })}>
           <h4
             className={css({
               fontSize: "xs",
@@ -371,7 +364,7 @@ const ProcView = ({
         </div>
 
         {def.errorType && (
-          <div className={css({ p: "4", bg: "#FEF2F2", borderRadius: "xl", border: "1px solid", borderColor: "#FECACA" })}>
+          <div className={css({ p: "4", bg: "#FEF2F2", borderRadius: "xl", border: "1px solid #FECACA" })}>
             <h4
               className={css({
                 fontSize: "xs",
@@ -404,7 +397,7 @@ const CustomView = ({
   return (
     <div>
       <AttributeList attributes={def.attributes} />
-      <div className={css({ fontFamily: "mono", fontSize: "sm", p: "4", bg: "#FAF9F6", borderRadius: "xl", border: "1px solid", borderColor: "#F5F3EF" })}>
+      <div className={css({ fontFamily: "mono", fontSize: "sm", p: "4", bg: "#FAF9F6", borderRadius: "xl", border: "1px solid #F5F3EF" })}>
         <span className={css({ color: "#A8A29E" })}>type alias of </span>
         <TypeDisplay type={def.originalType} onTypeClick={onTypeClick} />
       </div>
@@ -499,8 +492,7 @@ export const DefDetail = ({ defPath, ir, onTypeClick }: DefDetailProps) => {
 
       <div
         className={css({
-          border: "1px solid",
-          borderColor: "#E8E4DE",
+          border: "1px solid #E8E4DE",
           borderRadius: "2xl",
           overflow: "hidden",
           bg: "white",

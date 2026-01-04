@@ -357,8 +357,7 @@ const NamespaceTreeView = ({
           className={css({
             pl: node.name ? "4" : "0",
             mt: node.name ? "1" : "0",
-            borderLeft: node.name ? "2px solid" : "none",
-            borderColor: "rgba(217, 119, 6, 0.2)",
+            borderLeft: node.name ? "2px solid rgba(217, 119, 6, 0.2)" : "none",
             ml: node.name ? "2" : "0",
           })}
         >
@@ -543,8 +542,7 @@ export const Sidebar = ({
       className={css({
         position: "relative",
         flexShrink: 0,
-        borderRight: "1px solid",
-        borderColor: "#E8E4DE",
+        borderRight: "1px solid #E8E4DE",
         display: "flex",
         flexDirection: "column",
         height: "100vh",
@@ -576,8 +574,7 @@ export const Sidebar = ({
       <div
         className={css({
           p: "5",
-          borderBottom: "1px solid",
-          borderColor: "#E8E4DE",
+          borderBottom: "1px solid #E8E4DE",
           bg: "#FDFCFA",
         })}
       >
@@ -649,8 +646,7 @@ export const Sidebar = ({
               width: "100%",
               px: "3",
               py: "2",
-              border: "1px solid",
-              borderColor: "#E8E4DE",
+              border: "1px solid #E8E4DE",
               borderRadius: "lg",
               fontSize: "sm",
               bg: "white",
@@ -658,7 +654,7 @@ export const Sidebar = ({
               transition: "all 0.2s ease",
               _focus: {
                 outline: "none",
-                borderColor: "#D97706",
+                border: "1px solid #D97706",
                 boxShadow: "0 0 0 3px rgba(217, 119, 6, 0.1)",
               },
             })}
@@ -687,8 +683,7 @@ export const Sidebar = ({
                 width: "100%",
                 px: "3",
                 py: "2",
-                border: "1px solid",
-                borderColor: "#E8E4DE",
+                border: "1px solid #E8E4DE",
                 borderRadius: "lg",
                 fontSize: "sm",
                 bg: "white",
@@ -697,7 +692,7 @@ export const Sidebar = ({
                 transition: "all 0.2s ease",
                 _focus: {
                   outline: "none",
-                  borderColor: "#D97706",
+                  border: "1px solid #D97706",
                   boxShadow: "0 0 0 3px rgba(217, 119, 6, 0.1)",
                 },
               })}
@@ -744,8 +739,7 @@ export const Sidebar = ({
               pl: "10",
               pr: "3",
               py: "2.5",
-              border: "1px solid",
-              borderColor: "#E8E4DE",
+              border: "1px solid #E8E4DE",
               borderRadius: "lg",
               fontSize: "sm",
               bg: "white",
@@ -754,7 +748,7 @@ export const Sidebar = ({
               _placeholder: { color: "#A8A29E" },
               _focus: {
                 outline: "none",
-                borderColor: "#D97706",
+                border: "1px solid #D97706",
                 boxShadow: "0 0 0 3px rgba(217, 119, 6, 0.1)",
               },
             })}

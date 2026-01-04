@@ -215,14 +215,13 @@ export const NamespaceView = ({
                     gap: "3",
                     p: "4",
                     bg: "#FDFCFA",
-                    border: "1px solid",
-                    borderColor: "#E8E4DE",
+                    border: "1px solid #E8E4DE",
                     borderRadius: "lg",
                     cursor: "pointer",
                     textAlign: "left",
                     transition: "all 0.15s ease",
                     _hover: {
-                      borderColor: "#D97706",
+                      border: "1px solid #D97706",
                       bg: "rgba(217, 119, 6, 0.04)",
                     },
                   })}
@@ -292,14 +291,13 @@ export const NamespaceView = ({
                     gap: "2",
                     p: "4",
                     bg: "#FFFFFF",
-                    border: "1px solid",
-                    borderColor: "#E8E4DE",
+                    border: "1px solid #E8E4DE",
                     borderRadius: "lg",
                     cursor: "pointer",
                     textAlign: "left",
                     transition: "all 0.15s ease",
                     _hover: {
-                      borderColor: "#D97706",
+                      border: "1px solid #D97706",
                       bg: "rgba(217, 119, 6, 0.04)",
                     },
                   })}

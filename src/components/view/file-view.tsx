@@ -69,8 +69,7 @@ const FieldRow = ({
   return (
     <tr
       className={css({
-        borderBottom: "1px solid",
-        borderColor: "#F5F3EF",
+        borderBottom: "1px solid #F5F3EF",
         transition: "background 0.15s ease",
         _hover: { bg: "#FDFCFA" },
       })}
@@ -161,8 +160,7 @@ const InlineDefView = ({
     <div
       id={`def-${defPath}`}
       className={css({
-        border: "1px solid",
-        borderColor: "#E8E4DE",
+        border: "1px solid #E8E4DE",
         borderRadius: "xl",
         overflow: "hidden",
         bg: "white",
@@ -173,8 +171,7 @@ const InlineDefView = ({
       <div
         className={css({
           p: "4",
-          borderBottom: "1px solid",
-          borderColor: "#F5F3EF",
+          borderBottom: "1px solid #F5F3EF",
           bg: "#FDFCFA",
         })}
       >
@@ -254,8 +251,7 @@ const StructContent = ({
           <thead>
             <tr
               className={css({
-                borderBottom: "1px solid",
-                borderColor: "#E8E4DE",
+                borderBottom: "1px solid #E8E4DE",
                 bg: "#FAF9F6",
               })}
             >
@@ -334,8 +330,7 @@ const EnumContent = ({ def }: { def: Extract<Def, { type: "Enum" }> }) => {
               borderRadius: "md",
               fontFamily: "mono",
               fontSize: "sm",
-              border: "1px solid",
-              borderColor: "#F5F3EF",
+              border: "1px solid #F5F3EF",
             })}
           >
             <span className={css({ color: "#059669", fontWeight: "500" })}>
@@ -368,8 +363,7 @@ const UnionContent = ({
               p: "3",
               bg: "#FDFCFA",
               borderRadius: "lg",
-              border: "1px solid",
-              borderColor: "#E8E4DE",
+              border: "1px solid #E8E4DE",
             })}
           >
             <div
@@ -418,8 +412,7 @@ const OneofContent = ({
               px: "3",
               bg: "rgba(217, 119, 6, 0.06)",
               borderRadius: "md",
-              border: "1px solid",
-              borderColor: "rgba(217, 119, 6, 0.15)",
+              border: "1px solid rgba(217, 119, 6, 0.15)",
               fontFamily: "mono",
               fontSize: "sm",
             })}
@@ -491,8 +484,7 @@ const ProcContent = ({
             p: "3",
             bg: "#FDFCFA",
             borderRadius: "lg",
-            border: "1px solid",
-            borderColor: "#F5F3EF",
+            border: "1px solid #F5F3EF",
           })}
         >
           <div
@@ -517,8 +509,7 @@ const ProcContent = ({
             p: "3",
             bg: "#FDFCFA",
             borderRadius: "lg",
-            border: "1px solid",
-            borderColor: "#F5F3EF",
+            border: "1px solid #F5F3EF",
           })}
         >
           <div
@@ -544,8 +535,7 @@ const ProcContent = ({
               p: "3",
               bg: "#FEF2F2",
               borderRadius: "lg",
-              border: "1px solid",
-              borderColor: "#FECACA",
+              border: "1px solid #FECACA",
             })}
           >
             <div
@@ -828,8 +818,7 @@ export const FileView = ({
           display: "flex",
           gap: "1",
           mb: "6",
-          borderBottom: "1px solid",
-          borderColor: "#E8E4DE",
+          borderBottom: "1px solid #E8E4DE",
         })}
       >
         <button
@@ -894,8 +883,7 @@ export const FileView = ({
       ) : (
         <div
           className={css({
-            border: "1px solid",
-            borderColor: "#E8E4DE",
+            border: "1px solid #E8E4DE",
             borderRadius: "2xl",
             overflow: "hidden",
             bg: "white",
